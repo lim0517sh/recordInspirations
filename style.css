@@ -19,19 +19,43 @@ h1{
 
 
 /* form-css */
-#inspiration-form__text{
+@media screen and (max-width:650px) {
+  h1{
+    font-size: 30px;
+  }
+
+  #inspiration-form__text{
+    width: 80vw;
+    height: 10vw;
+    border-radius: 10px;
+
+  }
+  /* list-css */
+li{
+  width:80vw;
+}
+}
+
+@media screen and (min-width:650px) {
+  #inspiration-form__text{
   width:50vw;
   height:5vw;
   border-radius: 10px;
+  }
+  /* list-css */
+li{
+  width:50vw;
+  
+}
 }
 
 #inspiration-form__submit{
   display: none;
-}
+  }
+
 
 /* list-css */
 li{
-  width:50vw;
   border: 1px solid black;
   border-radius: 10px;
   margin: 10px 0px;
