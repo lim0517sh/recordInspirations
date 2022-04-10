@@ -37,7 +37,8 @@ function paintNewInpiration(event){
   li.appendChild(recorded);
   li.appendChild(idSpan);
   li.appendChild(deletebtn);
-  inspirationList.appendChild(li);
+  // inspirationList.appendChild(li);
+  inspirationList.insertBefore(li,inspirationList.firstChild);
   idSpan.style.setProperty('font-style','italic');
   idSpan.style.setProperty('font-size','12px');
 }
@@ -78,3 +79,4 @@ function beItalic(event){
 }
 
 spanss.forEach(beItalic);
+
